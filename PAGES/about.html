@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    
+    <link rel="stylesheet" type="text/css" href="../CSS/STYLE.css">
+    <style>
+        .title-about p {
+            padding: 15px;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Baskerville Old Face;
+            font-size: 60px;
+            transition: 0.7s ease;
+        }
+         body {
+            background-image: url(../IMAGES/home.jpg);
+            background-size: 100% 1585px;
+        }
+
+        .contact {
+            padding: 10px;
+            background-color: rgba(2, 2, 2, 0.6);
+            width: 595px;
+            height: 555px;
+            position: absolute;
+            top: 163px;
+            left: 907px;
+            border-radius: 4px;
+        }
+
+        .about {
+            background-color: rgba(2, 2, 2, 0.6);
+            width: 620px;
+            height: 570px;
+            position: absolute;
+            top: 165px;
+            left: 8px;
+            border-radius: 4px;
+        }
+
+        #name {
+            width: 580px;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            border: 2px solid gray;
+            border-radius: 4px;
+        }
+
+        #email {
+            width: 580px;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            border: 2px solid gray;
+            border-radius: 4px;
+        }
+
+        #message {
+            text-align: left;
+            width: 580px;
+            height: 400px;
+            font-size: 20px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            border: 2px solid gray;
+            border-radius: 4px;
+        }
+
+        #submit {
+            width: 593px;
+            height: 40px;
+            font-size: 20px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            border: 2px solid grey;
+            border-radius: 4px;
+            background: grey;
+        }
+
+        .icon {
+            height: 25px;
+            width: auto;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <a href="../index.html"><img class="logo" width="80px" height="80px" src="../IMAGES/qq.png"></a>
+        <ul class="menu-nav">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="portfolio.html">CV</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="research.html">RESEARCH</a></li>
+            <li class="active"><a href="about.html">ABOUT US</a></li>
+        </ul>
+    </div>
+    <div style="background: black; color: black; width: 100%; font-size: 5px; position: absolute; top: 20%; ">.</div>
+    <div class="title-about">
+        <p style="background: black;">About Us</p>
+    </div>
+    <div class="contact">
+        <form>
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <textarea id="message" placeholder="Message" required></textarea><br>
+            <button id="submit" onclick="submite()">Submit</button>
+            <script src="../javascript/script.js"></script>
+        </form>
+    </div>
+    <div class="about">
+        <p align="center" style="color: white;padding: 10px">Santosh Dangal<br>IT Student<br>Islington College<br>santoshdangal79@gmail.com</p>
+        <p align="center">
+            <a href="https://https://www.facebook.com/santosh.dangal.58173" target="_blank"><img class="icon" src="../IMAGES/fb.png"></a>
+            <a href="https://www.instagram.com/santosh_dangal21/" target="_blank"><img class="icon" src="../IMAGES/insta.png"></a>
+        </p>
+        <div>
+            <a href="https://www.google.com/maps/place/Islington+College/@27.708453,85.326052,13z/data=!4m5!3m4!1s0x0:0x1fdf1a6d41d2512d!8m2!3d27.7084529!4d85.3260516?hl=en-US" target="_blank">
+                <p style="position: absolute;margin-top: 385px;padding-left: 20px;font-size: 15px">Click the map to enlarge</p>
+            </a>
+            <a href="https://www.google.com/maps/place/Islington+College/@27.708453,85.326052,13z/data=!4m5!3m4!1s0x0:0x1fdf1a6d41d2512d!8m2!3d27.7084529!4d85.3260516?hl=en-US" target="_blank"><img src="../IMAGES/map.png" style="width: 97%;height: 395px;padding: 10px"></a>
+        </div>
+    </div>
+    <footer>
+        <p>Santosh Dangal - &copy; 2020 All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

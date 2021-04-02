@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Research</title>
+    
+    <link rel="stylesheet" type="text/css" href="../CSS/STYLE.css">
+    <style>
+        .title-research p {
+            padding: 15px;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Baskerville Old Face;
+            font-size: 60px;
+            transition: 0.7s ease;
+        }
+
+        .contents-box {
+            width: 1515px;
+            height: 510px;
+            background-color: rgba(2, 2, 2, 0.6);
+            position: absolute;
+            top: 210px;
+            left: 10px;
+        }
+
+        .ref {
+            width: 1495px;
+            height: 490px;
+            margin: 10px;
+        }
+
+        .para {
+            width: 600px;
+            height: 200px;
+            position: absolute;
+            color: white;
+            top: 20px;
+            left: 800px;
+        }
+
+        .image {
+            width: 700px;
+            height: 470px;
+            padding-left: 50px;
+            padding-top: 10px
+        }
+
+        #ref2 {
+            display: none;
+        }
+
+        #ref3 {
+            display: none;
+        }
+
+        #ref4 {
+            display: none;
+        }
+        #ref5 {
+            display: none;
+        }
+        .button{
+            position: absolute;
+            top: 670px;
+            left: 1370px;
+        }
+        .button button:hover{
+            opacity: 0.4;
+            transition: 0.4s ease;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <a href="../index.html"><img class="logo" width="80px" height="80px" src="../IMAGES/qq.png"></a>
+        <ul class="menu-nav">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="portfolio.html">CV</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li class="active"><a href="research.html">RESEARCH</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+    </div>
+    <div style="background: black; color: black; width: 100%; font-size: 5px; position: absolute; top: 20%; ">.</div>
+    <div class="title-research">
+        <p style="background: black;">Research</p>
+    </div>
+    <div class="contents-box">
+        <div class="ref" id="ref1">
+            <img class="image" src="../IMAGES/ref1.png">
+            <div class="para">
+                <p>I have taken the idea of scroll from <a href="https://www.w3schools.com/js/default.asp" target="_blank" style="text-decoration-color: white;color: white">w3shools.com</a>. 
+                    I have used this scrolling behaviour in the blog page where i have placed title in the left side with their own scrolling behaviour. And in my website the titles have fixed position but the contents are scrollabe so that the title is visible all the time whenever we go any of the content.</p>
+            </div>
+        </div>
+        <div class="ref" id="ref2">
+            <img class="image" src="../IMAGES/god.png">
+            <div class="para">
+                <p>I have taken the idea of nav from <a href="https://editor.wix.com/html/editor/web/renderer/new?siteId=31c9cc64-4739-437a-bf99-8a87fae88840&metaSiteId=7df46866-884d-4ed2-a9ea-b6f80df2ebaf&editorSessionId=c05146f9-c4b0-4f47-9fc7-df453768e463" target="_blank" style="text-decoration-color: white;color: white">a template of wix.com</a> website. I have used this idea in all my pages with adding hover effect+. And in my website navigation bar is in the top as in the website but the hover effects is a little different. Bottom border also appears in my website.</p>
+            </div>
+        </div>
+        <div class="ref" id="ref3">
+            <img class="image" src="../IMAGES/open.png">
+            <div class="para">
+                <p>I have taken the contents of blog from <a href="https://economictimes.indiatimes.com/tech/internet/heres-how-technology-affects-our-life/technology-addiction/slideshow/62497145.cms" target="_blank" style="text-decoration-color: white;color: white">indiantimes.com</a> which is a news website. This content is in my blog page. All the nine topics in my blog page is from this website. I have changed the pictures and styling of the contents and put on my website. I liked the content so much that I ended up copying the contents to my website.</p>
+            </div>
+        </div>
+        <div class="ref" id="ref4">
+            <img class="image" src="../IMAGES/ref4.png">
+            <div class="para">
+                <p>I have taken the idea of logo hover from <a href="https://economictimes.indiatimes.com/tech/internet/heres-how-technology-affects-our-life/technology-addiction/slideshow/62497145.cms" target="_blank" style="text-decoration-color: white;color: white">tympanus.net</a>.  I have used this conntent in all of my pages. When we hover on the logo of website, the logo dims if I try to click it.
+            </div>
+        </div>
+        <div class="ref" id="ref5">
+            <img class="image" src="../IMAGES/good.png">
+            <div class="para">
+                <p>I have taken the idea of toggling divs from <a href="https://www.google.com/search?client=opera&q=java+script&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank" style="text-decoration-color: white;color: white">google.com</a>. I have used this content in my research page at the buttom of the page which makes easier for me to go from one page to another page easily using butons 1 2 3 ..</p>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <button onclick="ref1()">1</button>
+        <button onclick="ref2()">2</button>
+        <button onclick="ref3()">3</button>
+        <button onclick="ref4()">4</button>
+        <button onclick="ref5()">5</button>
+        <script src="../JAVASCRIPT/script.js"></script>
+    </div>
+    <footer>
+        <p>Santosh Dangal - &copy; 2020 All rights reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/STYLE.css">
+    <style>
+        .two-button {
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            top: 62%;S
+            left: 50%;
+            transform: translate(+120%, -50%);
+        }
+
+        .button1 {
+            float: left;
+            transition: 0.6s;
+        }
+
+        .button2 {
+            float: right;
+            transition: 0.6s ease;
+        }
+
+        .button1:hover {
+            transform: scale(1.4);
+            transition: 0.6s ease;
+        }
+
+        .button2:hover {
+            transform: scale(1.3);
+            transition: 0.6s ease;
+        }
+
+        .note {
+            position: absolute;
+            top: 60%;
+            left: 44%;
+            transform: translate(-50%, -50%);
+            color:white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <a href="index.html"><img class="logo" width="80px" height="80px" src="IMAGES/qq.png"></a>
+        <ul class="menu-nav">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="PAGES/research.html">RESEARCH</a></li>
+            <li><a href="PAGES/about.html">ABOUT US</a></li>
+        </ul>
+    </div>
+    <div class="two-button">
+        
+        <a href="PAGES/portfolio.html">
+            <img class="button1" width="140px" height="110px" src="IMAGES/CV.png" />
+        </a>
+         <a href="PAGES/blog.html">
+            <img class="button2" width="250px" height="110px" src="IMAGES/blog.png" />
+        </a>
+    </div>
+    <div class="note">
+        <p style="font-style: italic;font-size: 12px">Note: The above images are clickable.</p>
+    </div>
+    <footer>
+        <div class="mytext" style="padding-top: 50px;">
+            <h5>Current Date and Time:</h5>
+            <p id="date"></p>
+
+            <script>
+            function mydate(){
+            var d = new Date();
+            document.getElementById("date").innerHTML = d;
+            setTimeout (mydate,1000)
+            }
+            mydate();
+            </script>
+            </div>
+        <p>Santosh Dangal - &copy; 2021 All rights reserved</p>
+    </footer>
+</body>
+
+</html>
